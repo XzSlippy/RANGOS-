@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rangos Nexus Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    :root {
+      --main-color: #9b59b6;
+      --accent: #e84393;
+      --glass: rgba(255, 255, 255, 0.05);
+      --border-glow: rgba(155, 89, 182, 0.5);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #1c1c2b, #12121b);
+      color: #f2f2f2;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(to right, #8e44ad, #6c3483);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      text-shadow: 0 0 15px var(--main-color);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--glass);
+      border: 1px solid var(--border-glow);
+      backdrop-filter: blur(15px);
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 35px var(--main-color);
+    }
+
+    .card h2 {
+      color: var(--main-color);
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .benefits {
+      list-style: none;
+      padding-left: 0;
+      line-height: 1.8;
+    }
+
+    .benefits li::before {
+      content: "★ ";
+      color: var(--accent);
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      background: #0070ba;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .buttons a:hover {
+      background: #005c9a;
+      box-shadow: 0 0 12px #0070ba;
+    }
+
+    .buttons .mp {
+      background: #00b0ff;
+    }
+
+    .buttons .mp:hover {
+      background: #0090dd;
+      box-shadow: 0 0 12px #00b0ff;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      padding: 20px 10px;
+      background: #181825;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 400px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TIENDA DE RANGOS</h1>
+  <p>Hazte legendario en Nexus Zone con estos rangos exclusivos</p>
+</header>
+
+<section class="container">
+
+  <!-- VIP+  -->
+  <div class="card" data-sr>
+    <h2>🎖️ VIP+</h2>
+    <ul class="benefits">
+      <li>Incluye todas las ventajas de VIP</li>
+      <li>Acceso a /feed y /workbench</li>
+      <li>Prefijo exclusivo en el chat</li>
+    </ul>
+    <div class="buttons">
+      <a href="LINK_PAYPAL_VIP_PLUS"><span>💳</span> PayPal - $7.99</a>
+      <a href="LINK_MP_VIP_PLUS" class="mp"><span>💰</span> MercadoPago</a>
+    </div>
+  </div>
+
+
+  <!-- HÉROE -->
+  <div class="card" data-sr>
+    <h2>🦸 HÉROE</h2>
+    <ul class="benefits">
+      <li>Comando /nick</li>
+      <li>Kit héroe exclusivo</li>
+      <li>Canales VIP en Discord</li>
+    </ul>
+    <div class="buttons">
+      <a href="LINK_PAYPAL_PREMIUM"><span>💳</span> PayPal - $2.99</a>
+      <a href="LINK_MP_HEROE" class="mp"><span>💰</span> MercadoPago</a>
+    </div>
+  </div>
+
+  <!-- ELITE -->
+  <div class="card" data-sr>
+    <h2>👑 ELITE</h2>
+    <ul class="benefits">
+      <li>Acceso al comando /fly</li>
+      <li>Prefijo dorado</li>
+      <li>Kit Elite especial</li>
+    </ul>
+    <div class="buttons">
+      <a href="LINK_PAYPAL_PREMIUM"><span>💳</span> PayPal - $4.99</a>
+      <a href="LINK_MP_ELITE" class="mp"><span>💰</span> MercadoPago</a>
+    </div>
+  </div>
+
+  <!-- ULTRA+ -->
+  <div class="card" data-sr>
+    <h2>💎 ULTRA+</h2>
+    <ul class="benefits">
+      <li>/fly ilimitado</li>
+      <li>Acceso a todos los kits</li>
+      <li>Prefijo brillante</li>
+      <li>Soporte prioritario</li>
+    </ul>
+    <div class="buttons">
+      <a href="LINK_PAYPAL_PREMIUM"><span>💳</span> PayPal - $13.99</a>
+      <a href="LINK_MP_ULTRA" class="mp"><span>💰</span> MercadoPago</a>
+    </div>
+  </div>
+
+  <!-- VIP -->
+  <div class="card" data-sr>
+    <h2>🎖️ VIP</h2>
+    <ul class="benefits">
+      <li>Incluye todas las ventajas de VIP</li>
+      <li>Acceso a /feed y /workbench</li>
+      <li>Prefijo exclusivo en el chat</li>
+    </ul>
+    <div class="buttons">
+      <a href="LINK_PAYPAL_VIP_PLUS"><span>💳</span> PayPal - $5.99</a>
+      <a href="LINK_MP_VIP_PLUS" class="mp"><span>💰</span> MercadoPago</a>
+    </div>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="card" data-sr>
+    <h2>🔥 PREMIUM</h2>
+    <ul class="benefits">
+      <li>Comando /repair</li>
+      <li>Acceso exclusivo a mundos especiales</li>
+      <li>Prefijo llamativo animado</li>
+    </ul>
+    <div class="buttons">
+      <a href="LINK_PAYPAL_PREMIUM"><span>💳</span> PayPal - $11.99</a>
+      <a href="LINK_MP_PREMIUM" class="mp"><span>💰</span> MercadoPago</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2025 Nexus Zone • Todos los derechos reservados
+</footer>
+
+<script>
+  ScrollReveal().reveal('[data-sr]', {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 800,
+    reset: false,
+    delay: 100
+  });
+</script>
+
+</body>
+</html>
